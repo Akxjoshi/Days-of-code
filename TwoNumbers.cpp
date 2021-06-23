@@ -15,7 +15,7 @@ vector<int> twoNumberSum(vector<int> array, int targetSum)
 {
 	sort(array.begin(),array.end()); //time complexity- O(nlogn), space complexity- O(1)
 	vector<int> a;
-	int left=0,right=array.size();
+	int left=0,right=array.size()-1;
 	while(left<right)
 	{
 		if(array[left]+array[right]==targetSum)
